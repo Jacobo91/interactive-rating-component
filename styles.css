@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Typeface */
+
+/* overpass-regular - latin */
+@font-face {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/overpass-v12-latin/overpass-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/overpass-v12-latin/overpass-v12-latin-regular.eot') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/overpass-v12-latin/overpass-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/overpass-v12-latin/overpass-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/overpass-v12-latin/overpass-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/overpass-v12-latin/overpass-v12-latin-regular.svg') format('svg'); /* Legacy iOS */
+}
+  /* overpass-700 - latin */
+@font-face {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/overpass-v12-latin/overpass-v12-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/overpass-v12-latin/overpass-v12-latin-700.eot') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/overpass-v12-latin/overpass-v12-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/overpass-v12-latin/overpass-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/overpass-v12-latin/overpass-v12-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/overpass-v12-latin/overpass-v12-latin-700.svg') format('svg'); /* Legacy iOS */
+}
+
+/* color variables */
+
+:root{
+    /* primary */
+    --orange: hsl(25, 97%, 53%);
+
+    /* neutral */
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(217, 12%, 63%);
+    --medium-gray: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --verydark-blue: hsl(216, 12%, 8%);
+    --padding-wrapper: 25px;
+    --padding-text: 20px;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--verydark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass';
+    font-size: 15px;
+}
+
+/* global styles */
+
+.circle{
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+}
+
+.center-text{
+    text-align: center;
+}
+
+/* card */
+
+.container{
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    background: linear-gradient( 18deg, hsl(216, 12%, 8%) 1%,hsl(213, 19%, 18%));
+}
+
+.wrapper{
+    width: 90%;
+    padding: var(--padding-wrapper) 0;
+    margin: 0 auto;
+}
+
+.fa-star{
+    color: var(--orange);
+    font-size: 0.7rem;
+}
+
+/*
+#text{
+    color: var(--white);
+}*/
+
+h3{
+    color: var(--white);
+    font-weight: 400;
+    padding: var(--padding-text) 0;
+}
+
+p{
+    font-size: 1rem;
+    padding-bottom: var(--padding-text);
+    color: var(--light-gray);
+}
+
+.options{
+    padding-bottom: var(--padding-text);
+    display: block;
+    width: 100%;
+    display: flex;justify-content: space-between;
+}
+
+input:hover{
+    cursor: pointer;
+}
+
+input[type="button"]{
+    color: var(--light-gray);
+    border: none;
+}
+
+input[type="button"]:hover{
+    background-color: var(--orange);
+    color: var(--white);
+    }
+
+input[type="submit"]{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0  auto;
+    min-height: 2.5rem;
+    border: none;
+    border-radius: 1.3rem;
+    border-color: var(--orange);
+    background-color: var(--orange);
+    color: var(--white);
+    letter-spacing: 2px;
+}
+
+input[type="submit"]:hover{
+background-color: var(--white);
+color: var(--orange);
+}
+
+/* thank you state */
+
+.image{
+    padding-bottom: var(--padding-text);
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.response{
+    color: var(--orange);
+    background-color: var(--dark-blue);
+    padding: 0.3rem 0;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 1.33rem;
+}
+
